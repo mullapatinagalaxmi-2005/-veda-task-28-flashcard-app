@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard App | Veda Technology</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>📚 Flashcard App</h1>
+        <p>Learn something new every day!</p>
+    </header>
+
+    <main class="container">
+
+        <div class="top-info">
+            <span id="cardNumber">Card 1 of 10</span>
+            <span id="status">Question</span>
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="card-container" id="cardContainer">
+            <div class="flashcard" id="flashcard">
+
+                <div class="card-face card-front">
+                    <span class="card-label">QUESTION</span>
+                    <h2 id="question">Loading question...</h2>
+                    <p>Click the card to reveal the answer</p>
+                    <span class="flip-icon">↻</span>
+                </div>
+
+                <div class="card-face card-back">
+                    <span class="card-label">ANSWER</span>
+                    <h2 id="answer">Loading answer...</h2>
+                    <p>Click to see the question again</p>
+                    <span class="flip-icon">↻</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button id="prevBtn" class="nav-btn">← Previous</button>
+            <button id="flipBtn" class="flip-btn">Flip Card ↻</button>
+            <button id="nextBtn" class="nav-btn">Next →</button>
+        </div>
+
+        <div class="extra-actions">
+            <button id="shuffleBtn">🔀 Shuffle Cards</button>
+            <button id="resetBtn">⟲ Reset Deck</button>
+        </div>
+
+        <p id="message">Keep learning and enjoy your flashcards!</p>
+
+    </main>
+
+    <footer>
+        <p>Developed for Veda Technology | Task 28</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
